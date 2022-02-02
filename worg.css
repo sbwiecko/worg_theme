@@ -1,0 +1,126 @@
+/* @theme worg */
+
+@import 'default';
+
+@charset "UTF-8";
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #003070;
+}
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #003070;
+    margin: 0.5em 0em;
+}
+h3 {
+    margin: 0.2em 0em;
+    /* padding: 0.10em 0em; */
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+    color: darkred;
+    font-style: italic;
+}
+p {
+    font-size: 18px;
+}
+blockquote {
+    background-color: #EFEFEF;
+    border-left: 6px solid #cccccc;
+    margin: 0.25em 0px; /* vertical and horizontal */
+    padding: 0.15em 10px;
+    margin-right: 1em;
+    /* margin: 0;
+    max-width: 400px; */
+}
+blockquote p {
+    text-align: left;
+    font-size: 16px;
+    font-style: italic;
+}
+pre{
+    font-size: 8px;
+}
+th {
+    font-size: 12px;
+    text-align: left;
+    background: #2E8652;
+    color: white;
+}
+td {
+    font-size: 11px;
+    column-count: 1;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+img {
+    display: inline;
+    margin: 0 auto;
+    padding: 5px;
+}
+/* img {
+    display: flex;
+} */
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+img[alt~="right"] {
+    display: block;
+    float: right;
+}
+ul {
+    font-size: 16px;
+    list-style: square;
+}
+ol {
+    font-size: 16px;
+}
+footer {
+    font-size: 16px;
+    bottom: 30px;
+    font-style: italic;
+    font-weight: normal;
+}
+header {
+    color: grey;
+    font-style: italic;
+}
+
+section {
+    background-image: url("https://raw.githubusercontent.com/sbwiecko/worg_theme/main/images/_NORMAL.png");
+    background-size: contain;
+}
+
+/* SLIDE "TITLE" */
+section.title {
+    background-image: url("https://raw.githubusercontent.com/sbwiecko/worg_theme/main/images/_TITLE.png");
+    background-size: contain;
+}
+
+/* PAGINATION */
+section::after {
+    /* content: 'Slide ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total); */
+    font-size: 16px;
+    bottom: 24px;
+    color: grey;
+}
+
+/* SLIDE "SEGMENT" */
+section.segment {
+    background-image: url("https://raw.githubusercontent.com/sbwiecko/worg_theme/main/images/_SECTION.png");
+    background-size: contain;
+}
+
+/* SLIDE "FINAL" */
+section.final {
+    background-image: url("https://raw.githubusercontent.com/sbwiecko/worg_theme/main/images/_FINAL.png");
+    background-size: contain;
+}
