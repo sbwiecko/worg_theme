@@ -5,7 +5,7 @@
 @charset "UTF-8";
 
 h1 {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: bold;
     color: #003070;
 }
@@ -16,17 +16,19 @@ h2 {
     margin: 0.5em 0em;
 }
 h3 {
-    margin: 0.2em 0em;
-    /* padding: 0.10em 0em; */
     font-size: 22px;
+    font-weight: bold;
+    color: #003070;
+    /* padding: 0.10em 0em; */
 }
 h4 {
-    font-size: 20px;
+    font-size: 18px;
     color: darkred;
     font-style: italic;
 }
 p {
     font-size: 18px;
+    margin-bottom: 5px;
 }
 blockquote {
     background-color: #EFEFEF;
@@ -39,20 +41,20 @@ blockquote {
 }
 blockquote p {
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
 }
 pre{
     font-size: 8px;
 }
 th {
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
     background: #2E8652;
     color: white;
 }
 td {
-    font-size: 11px;
+    font-size: 12px;
     column-count: 1;
 }
 table {
@@ -69,30 +71,54 @@ img {
     display: flex;
 } */
 img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 img[alt~="right"] {
     display: block;
     float: right;
 }
 ul {
-    font-size: 16px;
+    font-size: 14px;
     list-style: square;
+    margin-top: -15px;
 }
 ol {
-    font-size: 16px;
+    font-size: 14px;
+    margin-top: -15px;
 }
+
+/* FOOTER */
 footer {
-    font-size: 16px;
-    bottom: 30px;
-    font-style: italic;
-    font-weight: normal;
+    font-size: 12px;
+    font-style: normal;
+    font-family: Consolas;
+    color: middlegrey;
+    left: 20px;
+    bottom: 6px;
 }
-header {
+
+
+/* PAGINATION */
+section::after {
+    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+    font-family: Consolas;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 6px;
+    right: 20px;
+    color: white;
+    #border-top: solid;
+}
+
+/* header {
     color: grey;
     font-style: italic;
-}
+} */
+
+
+/* DEFINITION OF THE SEGMENT CLASSES */
+/* --------------------------------- */
 
 section {
     background-image: url("https://raw.githubusercontent.com/sbwiecko/worg_theme/main/images/_NORMAL.png");
@@ -103,14 +129,6 @@ section {
 section.title {
     background-image: url("https://raw.githubusercontent.com/sbwiecko/worg_theme/main/images/_TITLE.png");
     background-size: contain;
-}
-
-/* PAGINATION */
-section::after {
-    /* content: 'Slide ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total); */
-    font-size: 16px;
-    bottom: 24px;
-    color: grey;
 }
 
 /* SLIDE "SEGMENT" */
