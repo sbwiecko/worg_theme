@@ -66,6 +66,7 @@ img {
     display: inline;
     margin: 0 auto;
     padding: 5px;
+    background-color: transparent!important;
 }
 /* img {
     display: flex;
@@ -106,7 +107,7 @@ section::after {
     bottom: 6px;
     right: 20px;
     color: white;
-    #border-top: solid;
+    /* border-top: solid; */
 }
 
 /* header {
