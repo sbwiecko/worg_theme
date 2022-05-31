@@ -87,6 +87,13 @@ ol {
     font-size: 14px;
 }
 
+/* CONTAINER FOR TWO COLUMNS */
+.twocolumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 0px; */
+}
+
 /* FOOTER */
 footer {
     font-size: 12px;
